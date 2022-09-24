@@ -9,6 +9,16 @@
 
     <script>
 
+        function voltar(){
+            let s = document.getElementById("d")
+            let t = document.getElementById("i")
+
+            s.style.background = "rgb(188, 193, 186)";
+            s.style.color = "transparent";
+            t.style.color = "transparent";
+            
+        }
+
         function sortear() {
 
             let np = 100;
@@ -17,6 +27,9 @@
 
             document.getElementById("d" ).innerHTML = ns 
             document.getElementById("i" ).innerHTML = "O número sorteado é";
+
+            setTimeout(voltar,2000);
+
         }
         
 
